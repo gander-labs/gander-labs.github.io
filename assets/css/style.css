@@ -1,0 +1,36 @@
+:root{
+  --bg:#F6F7F9; --panel:#FFFFFF; --text:#14171C; --muted:#5A6270; --line:#DDE1E7; --accent:#3F7D20;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0F1115; --panel:#171A21; --text:#E6E9EF; --muted:#98A1B0; --line:#2A2F3A; --accent:#8BC34A;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.6}
+a{color:var(--accent)}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.92em;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:1px 6px}
+.wrap{max-width:760px;margin:0 auto;padding:64px 16px 48px}
+h1{margin:0 0 12px;font-size:clamp(34px,7vw,52px);line-height:1.1;letter-spacing:-.02em}
+.lead{font-size:clamp(18px,2.6vw,21px);color:var(--muted);margin:0 0 48px;max-width:36em}
+h2{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 16px}
+.card{margin-bottom:12px;display:block;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 24px;text-decoration:none;color:inherit;transition:border-color .15s}
+.card:hover,.card:focus-visible{border-color:var(--accent)}
+.card h3{margin:0 0 6px;font-size:20px}
+.card h3 span{color:var(--accent)}
+.card p{margin:0;color:var(--muted)}
+.card .url{margin-top:12px;font-size:14px;color:var(--accent);word-break:break-all}
+.note{margin:24px 0 56px;color:var(--muted);font-size:15px}
+footer{border-top:1px solid var(--line);padding-top:24px;color:var(--muted);font-size:15px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+footer a{color:var(--text)}
+.group{margin-bottom:48px}
+.group .intro{margin:-8px 0 16px;color:var(--muted);font-size:15px}
+.card h3 a{color:inherit;text-decoration:none}
+.card h3 a:hover,.card h3 a:focus-visible{text-decoration:underline}
+.card:has(h3 a:hover),.card:focus-within{border-color:var(--accent)}
+.card:hover{border-color:var(--line)}
+.card .meta{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px}
+.card .meta .lang{color:var(--muted)}
+.card .meta .lang::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-right:6px;vertical-align:1px}
+.archived .card{opacity:.75}
