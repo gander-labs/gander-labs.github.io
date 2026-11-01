@@ -1,0 +1,15 @@
+title: gander-labs
+tagline: experiments and prototypes by gander
+description: Experiments, prototypes and early-stage projects by gander.
+url: https://gander-labs.github.io
+baseurl: ""
+owner:
+  name: gander
+  url: https://github.com/gander
+org_url: https://github.com/gander-labs
+markdown: kramdown
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
